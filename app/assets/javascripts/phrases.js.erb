@@ -34,6 +34,7 @@ $('form').on('submit', function(event) {
   event.preventDefault();
   var addPhrase = $('#lyrics-input').val();
   phrases.push(addPhrase);
+  searchGenius(addPhrase);
 });
 
 $('.refresh-btn').click(function() {
