@@ -1,0 +1,92 @@
+.container-fluid {
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: black;
+}
+
+#content-wrapper {
+  margin: auto;
+  margin-top: 50px;
+  width: 60%;
+}
+
+#content {
+  background-color: white;
+  opacity: .65;
+
+  border:3px solid rgba(15, 255, 191, 0.89);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 50px;
+}
+
+#header-row p {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.kanye-phrases {
+  font-family: 'Slabo 27px', serif;
+  font-size: 32px;
+}
+
+.btn-wrapper {
+  text-align: center;
+  font-family: 'Slabo 27px', serif;
+  color: #303030;
+}
+
+.btn {
+  background-color: rgba(15, 255, 191, 0.89);
+  /*border-color: grey;*/
+  opacity: 1;
+  font-size: 16px;
+}
+
+.header-row {
+  line-height: 90em;
+}
+
+/*input*/
+
+form {
+  text-align: center;
+  transform: translateY(-50%);
+  background-color: rgba(15, 255, 191, 0.89);
+  opacity: .75;
+  border: 3px;
+  border-color: white;
+  border-radius: 10px;
+  width: 100%;
+  margin: 50px 0 0 0;
+  padding: 25px;
+}
+
+#lyrics-input {
+  position: relative;
+  height: auto;
+  width: 80%;
+  border-radius: 5px;
+}
+
+textarea p {
+  font-family: 'Slabo', serif;
+  color: black;
+}
+
+.btn {
+  text-align: center;
+  font-family: 'Slabo 27px', serif;
+  opacity: .75;
+  position: relative;
+
+}

@@ -1,0 +1,149 @@
+<html>
+<head>
+
+  <title>
+    Kanyisms brought to you by Maedinamerica
+  </title>
+
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- bootstrap -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="phrases.css">
+
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+
+  </head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="row" id="content-wrapper">
+
+      <div id="content">
+        <div id="header-row">
+          <h1 class="text-center" id="header"><b>Kanye's Greatest Punchlines</b></h1>
+          <p><i>"Mayonnaise colored Benz, I push Miracle Whips."</i></p>
+        </div>
+
+        <div class="row" id="btn-row">
+          <div class="btn-wrapper"><button type="button" class="refresh-btn btn btn-lg" type="submit"><strong>Next Punchline!</strong></button></div>
+        </div>
+
+        <p class="text-center kanye-phrases"></p>
+
+      </div>
+
+      <div id="input-wrapper">
+        <form>
+          <input type="text" name="phrase" id="lyrics-input" placeholder="press enter to add your favorite punchline to the rotation">
+        </form>
+      </div>
+
+     </div>  <!-- end content wrapper -->
+      <div class="pop-up">
+
+        <button type="button" class="modal-btn btn btn-primary btn-lg" data-target="#myModal">
+          View all punchlines
+        </button>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Kanye's Punchlines</h4>
+              </div>
+                <div class="modal-body">
+
+                  <ol class="phrases-list text-center list-unstyled"></ol>
+
+                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+  </div>
+
+  <script>
+$(function() {
+
+  var phrases = [
+    "George Bush doesn't care about black people.",
+    "I was never really good at anything except for the ability to learn.",
+    "We all self-conscious. I'm just the first to admit it.",
+    "People always say that you can't please everybody. I think that's a cop-out. Why not attempt it? 'Cause think of all the people you will please if you try.",
+    "Nothing in life is promised except death.",
+    "I'll say things that are serious and put them in a joke form so people can enjoy them. We laugh to keep from crying.",
+    "If you have the opportunity to play this game of life you need to appreciate every moment. a lot of people don't appreciate the moment until it's passed.",
+    "This dark diction has become America's addiction."
+  ];
+
+  var changeImage = function() {
+    var backgrounds = [
+      '1.jpg',
+      '2.jpg',
+      '3.jpg',
+      '4.jpg',
+      '5.jpg',
+      '6.jpg',
+      '8.jpg',
+      '9.jpg',
+      '10.jpg',
+      '11.jpg'];
+
+    var index = Math.floor(Math.random() * (backgrounds.length - 1));
+    $('.container-fluid').css('background-image', 'url(' + backgrounds[index] + ')')
+
+  };
+
+  $('form').on('submit', function(event) {
+    event.preventDefault();
+    var addPhrase = $('#lyrics-input').val();
+    phrases.push(addPhrase);
+  });
+
+  $('.refresh-btn').click(function() {
+    event.preventDefault();
+    location.reload();
+  });
+
+  var showPhrase = function() {
+    var phraseIndex = Math.floor(Math.random() * (phrases.length));
+    // console.log(phraseIndex);
+    var putPhrase = phrases[phraseIndex];
+    // console.log(putPhrase);
+    $(".kanye-phrases").append(putPhrase);
+  };
+
+  $('.modal-btn').click(function(){
+    event.preventDefault();
+    $('#myModal').modal();
+    phrases.forEach(function(phrase) {
+      console.log(phrase);
+      $('.phrases-list').append("<li>" + phrase + "</li>");
+    });
+  });
+
+showPhrase();
+changeImage();
+
+});
+  </script>
+  </div>
+</body>
+</html>

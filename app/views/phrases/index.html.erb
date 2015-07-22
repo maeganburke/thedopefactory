@@ -1,0 +1,56 @@
+
+  <div class="container-fluid">
+
+    <div class="row" id="content-wrapper">
+
+      <div id="content">
+        <div id="header-row">
+          <h1 class="text-center" id="header"><b>Kanye's Greatest Punchlines</b></h1>
+          <p><i>"Mayonnaise colored Benz, I push Miracle Whips."</i></p>
+        </div>
+
+        <div class="row" id="btn-row">
+          <div class="btn-wrapper"><button type="button" class="refresh-btn btn btn-lg" type="submit"><strong>Next Punchline!</strong></button></div>
+        </div>
+
+        <p class="text-center kanye-phrases">BLAH BLAH BLAH</p>
+
+      </div>
+
+      <div id="input-wrapper">
+        <form>
+          <input type="text" name="phrase" id="lyrics-input" placeholder="press enter to add your favorite punchline to the rotation">
+        </form>
+      </div>
+
+     </div>  <!-- end content wrapper -->
+      <div class="pop-up">
+
+        <button type="button" class="modal-btn btn btn-primary btn-lg" data-target="#myModal">
+          View all punchlines
+        </button>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Kanye's Punchlines</h4>
+              </div>
+                <div class="modal-body">
+
+                  <ol class="phrases-list text-center list-unstyled"></ol>
+
+                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+  </div>
