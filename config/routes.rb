@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
 
-  resources :phrases, only:[:index]
+  get '/' => 'sites#home'
+  get '/hireme' => 'sites#forhire'
 
-  get '/search/:query' => 'lyrics#search'
+  resources :phrases, only:[:index, :create]
+
+  get '/search' => 'lyrics#search'
+
+  resources :blogs, only:[:index, :show]
 
 end

@@ -1,56 +1,72 @@
+<div class="container-fluid" id="kanye-container">
 
-  <div class="container-fluid">
+  <div class="header">
+    <div id="header-row">
 
-    <div class="row" id="content-wrapper">
+      <h1 class="text-center" id="header"><b>Say 'Ye</b></h1>
+      <p><i>"Mayonnaise colored Benz, I push Miracle Whips."</i></p>
 
-      <div id="content">
-        <div id="header-row">
-          <h1 class="text-center" id="header"><b>Kanye's Greatest Punchlines</b></h1>
-          <p><i>"Mayonnaise colored Benz, I push Miracle Whips."</i></p>
-        </div>
+      <div class="block_1"></div> <hr />
 
-        <div class="row" id="btn-row">
-          <div class="btn-wrapper"><button type="button" class="refresh-btn btn btn-lg" type="submit"><strong>Next Punchline!</strong></button></div>
-        </div>
-
+      <div class="phrases-wrapper">
+        <%= content_tag :div, id: "phraselist", data: {phrases: @phrases} do %>
+        <% end %>
         <p class="text-center kanye-phrases"></p>
 
-      </div>
-
-      <div id="input-wrapper">
-        <form action="/search" method="get">
-          <input type="text" name="phrase" id="lyrics-input" placeholder="press enter to add your favorite punchline to the rotation">
-        </form>
-      </div>
-
-     </div>  <!-- end content wrapper -->
       <div class="pop-up">
+        <div id="btn-row">
 
-        <button type="button" class="modal-btn btn btn-primary btn-lg" data-target="#myModal">
-          View all punchlines
-        </button>
+          <hr>
+        <div class="btn-wrapper">
+          <button type="button" class="btn btn-default refresh-btn btn-sm" type="submit" id="next-phrase"><strong>gimme another one</strong></button>
 
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Kanye's Punchlines</h4>
-              </div>
-                <div class="modal-body">
+          <button type="button" class="btn btn-primary modal-btn btn-sm" data-target="#myModal" id="modal-btn">lemme see 'em all</button>
+        </div>
 
-                  <ol class="phrases-list text-center list-unstyled"></ol>
+
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Say 'Ye, Say Ye' Don't We Do This Everyday-Day?</h4>
 
                 </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
+                  <div class="modal-body">
 
+                    <ol class="phrases-list text-center list-unstyled"></ol>
+
+                  </div>
+                <div class="modal-footer">
+
+                  <button type="button" class="btn btn-default" data-dismiss="modal" id="btn-done">k, i'm done</button>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <!-- end of bootstrap modal -->
+    </div>
+    </div>
+    <!-- end of phrases display -->
+    </div>
+  </div>
 
-      </div>
+  <div id="input-wrapper">
+
+    <form action="/search" method="get">
+      <input type="text" name="phrase" id="lyrics-input" placeholder="press enter to add your favorite punchline to the rotation and scroll down for the lyrics">
+    </form>
 
   </div>
+
+  <div id="lyrics-wrapper">
+    <h1 id="show-title" style="margin: 0;"></h1>
+      <div id="show-result"></div>
+    <p id="show-url"></p>
+    <p id="show-lyrics"></p>
+  </div>
+
+</div>

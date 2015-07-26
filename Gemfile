@@ -45,3 +45,5 @@ group :development, :test do
 
   gem 'genius', '~> 0.1.0'
 end
+
+gem 'figaro'

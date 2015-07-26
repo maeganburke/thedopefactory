@@ -1,53 +1,81 @@
-.container-fluid {
-  height: 100%;
+body {
+  text-align: center;
+}
+// entire page
+#kanye-container {
+  position: absolute;
+  width: 100%; //how to fix this the right way?
+  height: 1050px;;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-color: #4d0505;
+  background-size: cover;
+
+  padding-top: 6%;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+// header
+.header {
+  background-image: url("whatever.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: black;
+
+  position: relative;
+  background-color: red; //just in case the picture messes up
+  // padding-top:
+  height: 400px;
+  width: auto;
+  border-radius: 5px;
+  border-color: rgba(158, 126, 0, 1);
+  border-width: 10px; //why wont this work?
+  color: white;
+  padding-top: 15px;
 }
 
-#content-wrapper {
-  margin: auto;
-  margin-top: 50px;
-  width: 60%;
+#header-row {
+  border-color: white;
+  border-width: 3px;
+  position: absolute;
+  padding-left: 4%;
 }
 
-#content {
-  background-color: white;
-  opacity: .65;
-
-  border:3px solid rgba(15, 255, 191, 0.89);
-  padding: 10px;
-  border-radius: 10px;
-}
-
-h1 {
-  font-family: 'Merriweather', serif;
+#header {
   font-size: 50px;
+  text-align: center;
 }
 
-#header-row p {
-  font-family: 'Merriweather', serif;
-  text-align: center;
-  font-size: 18px;
-  color: #1a1a1a;
+h1 + p {
+  color: rgba(214,214,214,0.9);
+  font-size: 24 px;
+}
+
+.phrases-wrapper {
+  height: 10em;
 }
 
 .kanye-phrases {
   font-family: 'Slabo 27px', serif;
-  font-size: 32px;
+  font-size: 39px;
+  color: #9e7e00;
+  // background-color: red;
+  width: 1200px;
+  position: static;
+  height: 150px;
 }
 
 .btn-wrapper {
-  text-align: center;
-  font-family: 'Slabo 27px', serif;
-  color: #303030;
+  color: black;
+  // position: absolute;
+  padding-left: 30px;
 }
 
 .btn {
   background-color: rgba(15, 255, 191, 0.89);
-  /*border-color: grey;*/
   opacity: 1;
   font-size: 16px;
 }
@@ -61,21 +89,37 @@ h1 {
 form {
   text-align: center;
   transform: translateY(-50%);
-  background-color: rgba(15, 255, 191, 0.89);
-  opacity: .75;
-  border: 3px;
-  border-color: white;
+  background-color: black;
+  // opacity: .75;
+  border: 5px;
+  border-color: rgba(158, 126, 0, 1);
   border-radius: 10px;
   width: 100%;
   margin: 50px 0 0 0;
   padding: 25px;
+  color: black;
+}
+
+#input-wrapper {
+  padding-top: 30px;
+  height: 30px;
+  position: static;
+  width: 100%;
+  border-radius: 5px;
+  color: black;
+  text-align: center;
+  font-size: 17px;
+}
+
+input {
+  width: 100%;
+  height: 70px;
 }
 
 #lyrics-input {
-  position: relative;
-  height: auto;
-  width: 80%;
-  border-radius: 5px;
+  color: black;
+  text-align: center;
+  border-radius: 3px;
 }
 
 textarea p {
@@ -83,10 +127,50 @@ textarea p {
   color: black;
 }
 
-.btn {
+.modal {
   text-align: center;
-  font-family: 'Slabo 27px', serif;
-  opacity: .75;
-  position: relative;
+  background-color: black;
+  color: black;
+}
+
+hr {
+  width:60%;
+  height:1.5px;
+  color: none;
+  border: 0;
+  }
+
+// buttons
+#next-phrase {
+  background-color: rgba(158, 126, 0, 1);
+  color: white;
+  border-color: white;
+  border-width: 3px;
+}
+
+#modal-btn {
+  background-color: white;
+  color: rgba(158, 126, 0, 1) ;
+  border-color: rgba(158, 126, 0, 1);
+  border-width: 3px;
+}
+
+#btn-done {
+  background-color: rgba(158, 126, 0, 1);
+  color: white;
+  border: none;
+}
+
+// title
+#show-title {
+  color: white;
+  font-size: 24px;
+  background-color: red;
+}
+
+#lyrics-wrapper {
+  color: white;
+  position: static;
+  padding-top: 130px;
 
 }
