@@ -10,8 +10,8 @@ class LyricsController < ApplicationController
     render :json => response.body
   end
 
-  def get_access_token
-
-  end
+  # def get_access_token
+  #
+  # end
 
 end

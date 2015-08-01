@@ -22,7 +22,7 @@ function searchGenius(searchQuery) {
           $('#show-result').append('<div class="block_1"></div> <hr />');
           $('#show-url').append('<a href=' + songURL + '>Check out the lyrics on Genius</a>');
         } else {
-          $('#show-title').append("You lame, bruh! That's not Kanye, that's " + songTitle + " by " + songArtist + "!");
+          $('#show-title').append("You lame, bruh! <br> That's not Kanye, that's " + songTitle + " by " + songArtist + "!");
           console.log("not a kanye song!")
         };
     },

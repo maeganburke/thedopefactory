@@ -28,7 +28,7 @@ body {
   position: relative;
   background-color: red; //just in case the picture messes up
   // padding-top:
-  height: 400px;
+  height: 350px;
   width: auto;
   border-radius: 5px;
   border-color: rgba(158, 126, 0, 1);
@@ -47,6 +47,7 @@ body {
 #header {
   font-size: 50px;
   text-align: center;
+  margin-top: 0;
 }
 
 h1 + p {
@@ -60,12 +61,12 @@ h1 + p {
 
 .kanye-phrases {
   font-family: 'Slabo 27px', serif;
-  font-size: 39px;
+  font-size: 30px;
   color: #9e7e00;
   // background-color: red;
   width: 1200px;
   position: static;
-  height: 150px;
+  height: 85px;
 }
 
 .btn-wrapper {
@@ -96,12 +97,12 @@ form {
   border-radius: 10px;
   width: 100%;
   margin: 50px 0 0 0;
-  padding: 25px;
+  padding: 15px;
   color: black;
 }
 
 #input-wrapper {
-  padding-top: 30px;
+  padding-top: 10px;
   height: 30px;
   position: static;
   width: 100%;
@@ -165,7 +166,7 @@ hr {
 #show-title {
   color: white;
   font-size: 24px;
-  background-color: red;
+  // background-color: red;
 }
 
 #lyrics-wrapper {

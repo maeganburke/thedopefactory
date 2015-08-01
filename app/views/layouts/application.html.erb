@@ -10,57 +10,8 @@
     Say Ye by Maedinamerica
   </title>
 
-  <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">The Dope Factory.</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/blogs">flight5289 <span class="sr-only">(current)</span></a></li>
-        <!-- dropdown menu -->
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">portfolio<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/phrases">Say 'Ye</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Dame Agua</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Gimme Water</a></li>
-
-          </ul>
-        </li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li id="seperator"><a href="/hireme">wanna hire me?</a></li>
-        <a href="https://www.linkedin.com/in/maeganburke"><img src="/assets/linkedin.png"></a>
-        <a href="https://github.com/maeganburke"><img src="/assets/Github.png"></a>
-        <a href="https://twitter.com/maebo"><img src="/assets/twitter.png"></a>
-        <a href="https://instagram.com/maedinamerica/"><img src="/assets/Instagram.png"></a>
-
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-  </nav>
-
   <!-- jQuery -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-  <!-- bootstrap -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   <!-- Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
@@ -68,8 +19,19 @@
   <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 
+  <!-- bootstrap -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 </head>
 <body>
+
+  <% if current_page?(:controller => 'phrases') %>
+    <%= render partial: "layouts/kanyenav" %>
+  <% else %>
+    <%= render partial: "layouts/navbar" %>
+  <% end %>
 
 <%= yield %>
 

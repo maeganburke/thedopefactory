@@ -1,3 +1,136 @@
-// Place all the styles related to the sites controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// homepage content
+.jumbo-container {
+  padding-left: 40px;
+
+}
+
+.jumbotron {
+  color: white;
+  font-family: 'Josefin Slab', serif;
+  font-weight: 600;
+}
+
+#navbar {
+  border-bottom: 3px #5c7f76 solid;
+}
+
+#hover li:hover {
+  background-color: #5c7f76;
+  color: white;
+}
+
+#hover li > a:hover {
+  color: white;
+}
+
+.dropdown-menu>li>a:hover {
+  background-color: #5c7f76;
+  color: white;
+}
+
+// kanye navbar
+#kanyenav {
+  color: #4d0505;
+  border-bottom: 3px #9e7e00 solid;
+}
+
+#kanyenav #hover li:hover {
+  background-color: #9e7e00;
+  color: white;
+}
+
+#kanyenav #hover li > a:hover {
+  color: white;
+}
+
+.dropdown-menu>li>a:hover {
+  background-color: #4d0505;
+  color: white;
+}
+
+hr {
+  width:60%;
+  height:1.5px;
+  color: #5c7f76;
+  border: 0;
+  }
+
+#homepage-content {
+  color: white;
+  font-family: 'Vollkorn', serif;
+  font-size: 23px;
+}
+
+#home-container {
+  font-family: 'Josefin Slab', serif;
+  color: white;
+}
+
+#home-row {
+  width: 93%;
+  position: relative;
+  margin-left: 103px;
+  // margin-right: 20px;
+}
+
+#home-container h1 {
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+#recent-project img {
+  height: 150px;
+  width: 225px;
+  border-radius: 3px;
+  border: 2px solid white;
+}
+
+#recent-project img:hover {
+  border: 2px solid #5c7f76;
+}
+
+#recent-project h2 > a  {
+  font-weight: 400;
+  font-size: 22px;
+  font-weight: bold;
+  color: #5c7f76;
+}
+
+#recent-project h2 > a:hover {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+#recent-project p {
+  font-weight: 400;
+  font-size: 20.5px;
+}
+
+.divider-vertical {
+  height: 230px;                   // any height
+  border-left: 1px solid gray;     // right or left is the same
+  float: left;                     // so BS grid doesn't break
+  opacity: .3;
+  margin-top: 35px;
+}
+
+// aboutmae
+#aboutpage {
+  padding: 150px 200px;
+  font-family: 'Josefin Slab', serif;
+  font-weight: 600;
+  background-color: #dbe1e0;
+  height: 657px;;
+}
+
+#aboutpage h1 {
+  font-size: 37px;
+  font-weight: bold;
+}
+
+#aboutpage p {
+  font-size: 23px;
+  font-weight: 400;
+}

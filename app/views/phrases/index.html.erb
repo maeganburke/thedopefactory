@@ -1,6 +1,6 @@
-<div class="container-fluid" id="kanye-container">
+<div class="container-fluid" id="kanye-container" style="height:657px">
 
-  <div class="header">
+  <div style="color: white; border-style:solid; border-color: white; !important" class="header">
     <div id="header-row">
 
       <h1 class="text-center" id="header"><b>Say 'Ye</b></h1>
@@ -20,9 +20,9 @@
         <div class="btn-wrapper">
           <button type="button" class="btn btn-default refresh-btn btn-sm" type="submit" id="next-phrase"><strong>gimme another one</strong></button>
 
+
           <button type="button" class="btn btn-primary modal-btn btn-sm" data-target="#myModal" id="modal-btn">lemme see 'em all</button>
         </div>
-
 
           <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
@@ -57,16 +57,16 @@
   <div id="input-wrapper">
 
     <form action="/search" method="get">
-      <input type="text" name="phrase" id="lyrics-input" placeholder="press enter to add your favorite punchline to the rotation and scroll down for the lyrics">
+      <input type="text" name="phrase" id="lyrics-input" placeholder="press enter to add your favorite punchline to the rotation">
     </form>
 
-  </div>
-
-  <div id="lyrics-wrapper">
-    <h1 id="show-title" style="margin: 0;"></h1>
-      <div id="show-result"></div>
+    <h1 id="show-title" style="margin-top:0"></h1>
     <p id="show-url"></p>
-    <p id="show-lyrics"></p>
+
   </div>
 
 </div>
+
+<script type="text/javascript">
+  initPhrases()
+</script>
