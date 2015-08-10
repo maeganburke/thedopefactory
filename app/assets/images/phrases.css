@@ -26,25 +26,25 @@
 }
 
 h1 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 50px;
 }
 
 #header-row p {
-  font-family: 'Merriweather', serif;
+  font-family: 'Quicksand', sans-serif;
   text-align: center;
   font-size: 18px;
   color: #1a1a1a;
 }
 
 .kanye-phrases {
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 32px;
 }
 
 .btn-wrapper {
   text-align: center;
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Quicksand', sans-serif;
   color: #303030;
 }
 
@@ -88,7 +88,7 @@ textarea p {
 
 .btn {
   text-align: center;
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Quicksand', sans-serif;
   opacity: .75;
   position: relative;
 

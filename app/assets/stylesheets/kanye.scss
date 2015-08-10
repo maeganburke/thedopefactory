@@ -5,32 +5,21 @@ body {
 #kanye-container {
   position: absolute;
   width: 100%; //how to fix this the right way?
-  height: 1050px;;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  height: 100vh;
   background-color: #4d0505;
   background-size: cover;
-
-  padding-top: 6%;
+  padding-top: 20px;
   text-align: center;
-  font-family: 'Merriweather', serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 // header
 .header {
-  background-image: url("whatever.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
   position: relative;
-  background-color: black; //just in case the picture messes up
-  // padding-top:
+  background-color: black;
   height: 350px;
   width: auto;
-  border-radius: 5px;
+  border-radius: 2px;
   border-color: rgba(158, 126, 0, 1);
   border-width: 10px; //why wont this work?
   color: white;
@@ -50,9 +39,13 @@ body {
   margin-top: 0;
 }
 
-h1 + p {
+h1 {
+  font-size: 20px;
+}
+
+p {
   color: rgba(214,214,214,0.9);
-  font-size: 24 px;
+  font-size: 20px;
 }
 
 .phrases-wrapper {
@@ -60,7 +53,7 @@ h1 + p {
 }
 
 .kanye-phrases {
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 30px;
   color: #9e7e00;
   // background-color: red;
@@ -75,10 +68,10 @@ h1 + p {
   padding-left: 30px;
 }
 
-.btn {
+.button {
   background-color: rgba(15, 255, 191, 0.89);
   opacity: 1;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .header-row {
@@ -91,10 +84,9 @@ form {
   text-align: center;
   transform: translateY(-50%);
   background-color: black;
-  // opacity: .75;
   border: 5px;
   border-color: rgba(158, 126, 0, 1);
-  border-radius: 10px;
+  border-radius: 2px;
   width: 100%;
   margin: 50px 0 0 0;
   padding: 15px;
@@ -109,7 +101,7 @@ form {
   border-radius: 5px;
   color: black;
   text-align: center;
-  font-size: 17px;
+  font-size: 23px;
 }
 
 input {
@@ -166,6 +158,8 @@ hr {
 #show-title {
   color: white;
   font-size: 24px;
+  margin-bottom: 30px;
+  bottom: 10px;
   // background-color: red;
 }
 
@@ -173,5 +167,4 @@ hr {
   color: white;
   position: static;
   padding-top: 130px;
-
 }

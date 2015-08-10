@@ -9,11 +9,19 @@ html {
 // navbar
 .navbar {
   line-height: 3px;
-  font-size: 18px;
+  font-size: 19px;
   margin-bottom: 0;
   background-color: black;
-  font-family: 'Josefin Slab', serif;
-  font-weight: 600;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+#icons {
+  margin-right: 20px;
+}
+
+#about {
+  border-right: 1px dashed #a1a1a1;
 }
 
 .navbar img {
@@ -31,21 +39,16 @@ html {
   padding-top: 30px;
 }
 
-
 #navbar {
   border-top: 3px #5c7f76 solid;
 }
 
-#hover li:hover {
-  background-color: #5c7f76;
-  color: white;
+#navbar .navbar-nav > li > a {
+  margin: 0;
+  border: 0;
 }
 
-#hover li > a:hover {
-  color: white;
-}
-
-.dropdown-menu > li > a:hover {
+#navbar .navbar-nav > li > a:hover {
   background-color: #5c7f76;
   color: white;
 }
@@ -57,20 +60,16 @@ html {
 // kanye navbar
 #kanyenav {
   color: #4d0505;
-  border-bottom: 3px #9e7e00 solid;
+  border-top: 3px #9e7e00 solid;
 }
 
-#kanyenav #hover li:hover {
+#kanyenav .navbar-nav > li > a {
+  margin: 0;
+  border: 0;
+}
+
+#kanyenav .navbar-nav > li > a:hover{
   background-color: #9e7e00;
-  color: white;
-}
-
-#kanyenav #hover li > a:hover {
-  color: white;
-}
-
-.dropdown-menu>li>a:hover {
-  background-color: #4d0505;
   color: white;
 }
 
@@ -91,7 +90,7 @@ hr {
   }
 
 #home-container {
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Quicksand', sans-serif;
   color: white;
 }
 
@@ -187,7 +186,7 @@ hr {
 // aboutmae
 #aboutpage {
   padding: 150px 200px;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 600;
   background-color: #dbe1e0;
   height: 657px;;
