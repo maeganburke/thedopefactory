@@ -1,14 +1,36 @@
-// homepage content
-.jumbo-container {
-  padding-left: 40px;
-
+html {
+  background: url(images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.jumbotron {
-  color: white;
+// navbar
+.navbar {
+  line-height: 3px;
+  font-size: 18px;
+  margin-bottom: 0;
+  background-color: black;
   font-family: 'Josefin Slab', serif;
   font-weight: 600;
 }
+
+.navbar img {
+  height: 42px;
+  width: auto;
+  padding-top: 10px;
+}
+
+#seperator {
+  border-left: black;
+}
+
+// navbar right
+#hire-me {
+  padding-top: 30px;
+}
+
 
 #navbar {
   border-bottom: 3px #5c7f76 solid;
@@ -48,6 +70,15 @@
   color: white;
 }
 
+// homepage content
+#home-container {
+  padding: 0;
+  background-color: #141414;
+  width: 100%;
+  height: 100vh;
+  transition: 1s all;
+}
+
 hr {
   width:60%;
   height:1.5px;
@@ -55,58 +86,84 @@ hr {
   border: 0;
   }
 
-#homepage-content {
-  color: white;
-  font-family: 'Vollkorn', serif;
-  font-size: 23px;
-}
-
 #home-container {
   font-family: 'Josefin Slab', serif;
   color: white;
 }
 
-#home-row {
-  width: 93%;
-  position: relative;
-  margin-left: 103px;
-  // margin-right: 20px;
-}
-
-#home-container h1 {
-  font-weight: 500;
-  font-size: 24px;
-  margin-top: 0;
-}
-
-#recent-project img {
-  height: 150px;
-  width: 225px;
-  border-radius: 3px;
-  border: 2px solid white;
-}
-
-#recent-project img:hover {
-  border: 2px solid #5c7f76;
-}
-
-#recent-project h2 > a  {
-  font-weight: 400;
-  font-size: 22px;
-  font-weight: bold;
-  color: #5c7f76;
-}
-
-#recent-project h2 > a:hover {
+.recent-project {
+  height: 100vh;
   color: white;
-  font-size: 24px;
-  text-decoration: none;
+  position: relative;
+  overflow: hidden;
 }
 
-#recent-project p {
-  font-weight: 400;
-  font-size: 18.5px;
+.recent-project:hover .text-overlay {
+  transform: translateY(0);
 }
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom:40%;
+  left: 0;
+  padding: 50px;
+  color: white;
+  transform: translateY(100%);
+  transition: transform .35s ease-out;
+}
+//
+// .recent-project h2  {
+//   font-weight: 400;
+//   font-size: 38px;
+//   z-index: 1;
+// }
+//
+// .recent-project h2:hover {
+//   color: white;
+// }
+//
+// .recent-project p {
+//   font-weight: 400;
+//   font-size: 23px;
+// }
+//
+// .recent-project p:hover {
+//   font-weight: 400;
+//   font-size: 18.5px;
+// }
+//
+// #blog-project {
+//   background-color: #120212;
+//   border: none;
+// }
+
+// #blog-project:hover {
+//   background-image: url(/assets/barcelonapic.jpg);
+// }
+
+#kanye-project {
+  background-color: #501b4f;
+}
+
+// #kanye-project:hover {
+//   background-image: url(/assets/kanyepic.jpg);
+// }
+
+#agua-project {
+  background-color: #633b62;
+}
+//
+// #agua-project:hover {
+//   background-image: url(/assets/waterpic.jpg);
+// }
 
 .divider-vertical {
   height: 230px;                   // any height
