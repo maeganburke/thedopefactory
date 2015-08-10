@@ -33,7 +33,7 @@ html {
 
 
 #navbar {
-  border-bottom: 3px #5c7f76 solid;
+  border-top: 3px #5c7f76 solid;
 }
 
 #hover li:hover {
@@ -45,9 +45,13 @@ html {
   color: white;
 }
 
-.dropdown-menu>li>a:hover {
+.dropdown-menu > li > a:hover {
   background-color: #5c7f76;
   color: white;
+}
+
+.container {
+  margin: 0 !important;
 }
 
 // kanye navbar
@@ -94,12 +98,59 @@ hr {
 .recent-project {
   height: 100vh;
   color: white;
-  position: relative;
   overflow: hidden;
+  position: absolute;
+  padding: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  transition: background .35s ease-out;
+  transform: translateZ(0);
+  h2 {
+    font-weight: 400;
+    font-size: 38px;
+    color: black;
+  }
+  p {
+    font-weight: 400;
+    font-size: 23px;
+  }
+}
+
+.recent-project:hover {
+  h2 {
+    font-size: 45px;
+    color: white;
+  }
+  p {
+  font-size: 24px;
+  }
+  .text-overlay {
+    background-color: rgba(0, 20, 15, 0.5);
+    padding-top: 100px;
+    height: inherit;
+    color: white;
+  }
 }
 
 .recent-project:hover .text-overlay {
   transform: translateY(0);
+}
+
+.recent-project::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    transition: background .35s ease-out;
+}
+.recent-project:hover::before {
+    background: rgba(0, 0, 0, .5);
 }
 
 .project-image {
@@ -112,58 +163,18 @@ hr {
   position: absolute;
   top: 0;
   right: 0;
-  bottom:40%;
+  bottom: 20%;
   left: 0;
-  padding: 50px;
+  padding: 20px;
+  // padding-top: 100px;
   color: white;
+  background-color: rgba(0, 20, 15, 0.5);
   transform: translateY(100%);
   transition: transform .35s ease-out;
+  h2 {
+    color: white;
+  }
 }
-//
-// .recent-project h2  {
-//   font-weight: 400;
-//   font-size: 38px;
-//   z-index: 1;
-// }
-//
-// .recent-project h2:hover {
-//   color: white;
-// }
-//
-// .recent-project p {
-//   font-weight: 400;
-//   font-size: 23px;
-// }
-//
-// .recent-project p:hover {
-//   font-weight: 400;
-//   font-size: 18.5px;
-// }
-//
-// #blog-project {
-//   background-color: #120212;
-//   border: none;
-// }
-
-// #blog-project:hover {
-//   background-image: url(/assets/barcelonapic.jpg);
-// }
-
-#kanye-project {
-  background-color: #501b4f;
-}
-
-// #kanye-project:hover {
-//   background-image: url(/assets/kanyepic.jpg);
-// }
-
-#agua-project {
-  background-color: #633b62;
-}
-//
-// #agua-project:hover {
-//   background-image: url(/assets/waterpic.jpg);
-// }
 
 .divider-vertical {
   height: 230px;                   // any height
