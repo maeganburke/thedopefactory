@@ -32,6 +32,7 @@ gem 'rails_12factor', group: :production
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'figaro'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -46,5 +47,3 @@ group :development, :test do
 
   gem 'genius', '~> 0.1.0'
 end
-
-gem 'figaro'
