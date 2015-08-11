@@ -15,7 +15,7 @@
         var data = { phrase: { text: addPhrase } }
 
         $.ajax ({
-          url: '/phrases',
+          url: '/sayye',
           data: data,
           dataType: 'json',
           method: 'POST',
